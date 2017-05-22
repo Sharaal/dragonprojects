@@ -7,7 +7,7 @@ app.use('/maxdome-rssfeeds', require('@dragonprojects/maxdome-rssfeeds'));
 
 const sharaal = require('@dragonprojects/sharaal');
 app.use('/sharaal', sharaal);
-app.use(require('vhost')('sharaal.de', sharaal));
+app.use(require('vhost')('www.sharaal.de', sharaal));
 
 if (module.parent) {
   module.exports = app;
