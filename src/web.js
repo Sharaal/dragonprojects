@@ -3,16 +3,11 @@ require('dotenv-safe').config();
 const app = require('express')();
 app.disable('x-powered-by');
 
-const vhost = require('vhost');
-
-const maxdomeRSSFeeds = require('@dragonprojects/maxdome-rssfeeds');
-app.use('/maxdome-rssfeeds', maxdomeRSSFeeds);
-app.use(vhost('maxdome-rssfeeds.herokuapp.com', maxdomeRSSFeeds));
+app.use('/maxdome-rssfeeds', require('@dragonprojects/maxdome-rssfeeds'));
 
 const sharaal = require('@dragonprojects/sharaal');
 app.use('/sharaal', sharaal);
-app.use(vhost('sharaal.de', sharaal));
-app.use(vhost('sharaal.herokuapp.com', sharaal));
+app.use(require('vhost')('sharaal.de', sharaal));
 
 if (module.parent) {
   module.exports = app;
