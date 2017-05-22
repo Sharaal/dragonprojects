@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "engines": {
+    "node": "^7.6.0"
+  },
+  "name": "@dragonprojects/dragonprojects",
+  "version": "1.0.0",
+  "description": "",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "src/web.js",
+  "scripts": {
+    "start": "node src/web.js"
+  },
+  "dependencies": {
+    "@dragonprojects/maxdome-rssfeeds": "^1.0.0",
+    "@dragonprojects/sharaal": "^1.0.0",
+    "dotenv-safe": "^4.0.4",
+    "express": "^4.15.3",
+    "vhost": "^3.0.2"
+  },
+  "devDependencies": {}
+}
