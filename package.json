@@ -5,7 +5,7 @@
   },
   "name": "@dragonprojects/dragonprojects",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proxy to combine apps runnable on a single Heroku dyno",
   "repository": "sharaal/dragonprojects",
   "license": "UNLICENSED",
   "publishConfig": {
