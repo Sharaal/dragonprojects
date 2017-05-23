@@ -6,6 +6,8 @@
   "name": "@dragonprojects/dragonprojects",
   "version": "1.0.0",
   "description": "",
+  "repository": "sharaal/dragonprojects",
+  "license": "UNLICENSED",
   "publishConfig": {
     "access": "public"
   },
