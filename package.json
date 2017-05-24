@@ -16,7 +16,7 @@
     "start": "node src/web.js"
   },
   "dependencies": {
-    "@dragonprojects/maxdome-rssfeeds": "^1.0.5",
+    "@dragonprojects/maxdome-rssfeeds": "^1.1.0",
     "@dragonprojects/sharaal": "^1.0.1",
     "dotenv-safe": "^4.0.4",
     "express": "^4.15.3",
